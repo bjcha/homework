@@ -17,6 +17,6 @@ public class UserController {
 
 	@GetMapping("/home")
 	public String home(@ModelAttribute("loginForm") LoginVo loginForm, Model model) {
-		return "login";
+		return "home/grid";
 	}
 }
