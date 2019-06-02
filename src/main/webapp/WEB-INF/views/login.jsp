@@ -7,14 +7,17 @@
 <title>Insert title here</title>
 </head>
 <body>
+	테스트 접속정보
+	ID : test
+	PW : 1234
 
  	<form action="/login-processing"  method="post" >
-	 <!--  <div>
-	    Email: <input type="text" th:field="*{id}" autofocus />
+	   <div>
+	    Id: <input type="text" id = "email" name = "email" />
 	  </div>
 	  <div>
-	    Password: <input type="password" th:field="*{password}" />
-	  </div> -->
+	    Password: <input type="password" id = "password" name = "password" />
+	  </div> 
 	  <div>
 	    <input type="submit" value="Log in" />
 	  </div>
