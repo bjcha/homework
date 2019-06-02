@@ -111,7 +111,7 @@ $(function(){
     }); 
      
     function datatableStart(){
-    	url = '/list';
+    	url = '/rsupport/list';
     	table = $('#example').DataTable({
     		"processing": false,
     	    "serverSide": false,
@@ -277,6 +277,8 @@ $(function(){
     
   	//검색 
     function fnSearch(){
+    	$("#hiddenPath").val("");
+    	$("#hiddenValue").val("");
   		table.ajax.reload( function ( json ) {
   			return json.data;
     	});

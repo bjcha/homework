@@ -11,7 +11,7 @@
 	ID : test
 	PW : 1234
 
- 	<form action="/login-processing"  method="post" >
+ 	<form action="/rsupport/login-processing"  method="post" >
 	   <div>
 	    Id: <input type="text" id = "email" name = "email" />
 	  </div>

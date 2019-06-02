@@ -27,11 +27,11 @@ public class WebSecurityConfig  extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
-        		.antMatchers("/").permitAll()
-        		.antMatchers("/h2_console/**").permitAll()
-                .antMatchers("/css/**", "/js/**", "/img/**").permitAll()
-                .antMatchers("/auth/admin/**").hasRole("ADMIN") // 내부적으로 접두어 "ROLE_"가 붙는다.
-                .antMatchers("/auth/**").hasAnyRole("ADMIN", "USER") // 내부적으로 접두어 "ROLE_"가 붙는다.
+        		.antMatchers("/rsupport").permitAll()
+        		.antMatchers("/rsupport/h2_console/**").permitAll()
+                .antMatchers("/rsupport/css/**", "/rsupport/js/**", "/rsupport/img/**").permitAll()
+                .antMatchers("/rsupport/auth/admin/**").hasRole("ADMIN") // 내부적으로 접두어 "ROLE_"가 붙는다.
+                .antMatchers("/rsupport/auth/**").hasAnyRole("ADMIN", "USER") // 내부적으로 접두어 "ROLE_"가 붙는다.
                 .anyRequest().authenticated();
         http.csrf().disable();
      //   http.csrf();
@@ -40,15 +40,15 @@ public class WebSecurityConfig  extends WebSecurityConfigurerAdapter {
         http.formLogin()
                 .loginPage("/") // default
                 .loginProcessingUrl("/login-processing")
-                .failureUrl("/login?error") // default
+                .failureUrl("/rsupport/login?error") // default
                 .defaultSuccessUrl("/home")
                 .usernameParameter("email")
                 .passwordParameter("password")
                 .permitAll();
  
         http.logout()
-                .logoutUrl("/logout") // default
-                .logoutSuccessUrl("/")
+                .logoutUrl("/rsupport/logout") // default
+                .logoutSuccessUrl("/rsupport/")
                 .permitAll();
     }
  
