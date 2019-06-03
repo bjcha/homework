@@ -13,9 +13,9 @@
    
  실행방벙
  (src/main/rsupport.war 있습니다.) 
- rsupport.war copy to  tomcat/webapp/
+ 1. rsupport.war copy to  tomcat/webapp/
  address
- http://localhost:8080/rsupport
+ 1. http://localhost:8080/rsupport
  
  기능
  1. 로그인
@@ -26,6 +26,6 @@
  6. 공지 검색 ( 제목,,작성자,등록일, 수정일)
  
  빌드방법
- jdk1.8 이상
- download > rsupport.zip
- eclipse > import > Exisiting Maven Projects
+ 1. jdk1.8 이상
+ 2. download > rsupport.zip
+ 3. eclipse > import > Exisiting Maven Projects
