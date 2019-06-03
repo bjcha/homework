@@ -14,8 +14,7 @@
  실행방벙
  (src/main/rsupport.war 있습니다.) 
  1. rsupport.war copy to  tomcat/webapp/
- address
- 1. http://localhost:8080/rsupport
+ 2. address : http://localhost:8080/rsupport
  
  기능
  1. 로그인
