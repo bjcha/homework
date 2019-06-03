@@ -27,4 +27,4 @@
  빌드방법
  1. jdk1.8 이상
  2. download > rsupport.zip
- 3. eclipse > import > Exisiting Maven Projects
+ 3. eclipse > import > Exisiting Maven Projects > maven clean > maven install 
