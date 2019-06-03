@@ -11,7 +11,8 @@
 3. HANDLEAR
    JPA
    
- 실행방벙
+ 실행방벙 <br />
+ src/main/rsupport.war 
  rsupport.war copy to  tomcat/webapp/
  address
  http://localhost:8080/rsupport
